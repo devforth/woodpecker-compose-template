@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
   woodpecker-server:
-    image: woodpeckerci/woodpecker-server:v0.15.3
+    image: woodpeckerci/woodpecker-server:v0.15.4
     ports:
       - 80:80
       - 443:443
@@ -31,7 +31,7 @@ services:
 
 
   woodpecker-agent:
-    image: woodpeckerci/woodpecker-agent:v0.15.3
+    image: woodpeckerci/woodpecker-agent:v0.15.4
     command: agent
     restart: always
     depends_on:
@@ -49,7 +49,7 @@ services:
       - WOODPECKER_DOCKER_CONFIG=/root/.docker/config.json
 
   woodpecker-agent2:
-    image: woodpeckerci/woodpecker-agent:v0.15.3
+    image: woodpeckerci/woodpecker-agent:v0.15.4
     command: agent
     restart: always
     depends_on:
@@ -66,7 +66,7 @@ services:
       - WOODPECKER_DOCKER_CONFIG=/root/.docker/config.json
 
   woodpecker-agent3:
-    image: woodpeckerci/woodpecker-agent:v0.15.3
+    image: woodpeckerci/woodpecker-agent:v0.15.4
     command: agent
     restart: always
     depends_on:
